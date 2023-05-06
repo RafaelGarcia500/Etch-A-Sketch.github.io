@@ -45,6 +45,9 @@ body{
 #board:hover{
     cursor: pointer;
 }
+div{
+    border: 1px solid #111;
+}
 .sizeCanvas{
     display: flex;
     gap: 1em;
