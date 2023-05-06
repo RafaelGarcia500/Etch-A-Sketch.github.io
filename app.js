@@ -15,9 +15,18 @@ function generateDiv(size) {
         gridItem.style.backgroundColor = `white`
         container.appendChild(gridItem)
     }
-  
-}
+    if(size >= 100 || size == 1 || isNaN(size)){
+    let span = document.createElement(`span`)
+    span.classList.add(`.span`)
+    span.style.color = `white`
+    span.textContent = ` Invalid!`
+    document.querySelector(`.buttonContainer`).appendChild(span)
+    generateDiv(16)
+    setTimeout(function(){ window.location.reload()}, 2000);
+    
 
+}
+}
 generateDiv(16)
 
 function clearBoard(){
@@ -35,7 +44,6 @@ function randomColorButton(){
         });
     });
 }
-
 
 
 

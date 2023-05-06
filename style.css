@@ -64,7 +64,9 @@ button{
   text-align: center;
   transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
-
+.span{
+    display: flex;
+}
 .sizeButton{
     position: relative;
 }
